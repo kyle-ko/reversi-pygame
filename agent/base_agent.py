@@ -68,3 +68,8 @@ class RandomAgent(BaseAgent):
 if __name__ == "__main__":
     agent = RandomAgent()
     print(agent.step(None, None))
+
+class MyAgent(BaseAgent):
+    def step(self, obs, reward):
+        # override this function
+        # strongly suggest: write a function to get valid actions
