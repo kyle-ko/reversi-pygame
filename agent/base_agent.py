@@ -71,5 +71,4 @@ if __name__ == "__main__":
 
 class MyAgent(BaseAgent):
     def step(self, obs, reward):
-        # override this function
-        # strongly suggest: write a function to get valid actions
+        return (self.col_offset + random.randint(0, self.cols_n-1) * self.block_len, self.row_offset + random.randint(0, self.rows_n-1) * self.block_len), pygame.USEREVENT
