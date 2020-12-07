@@ -44,4 +44,6 @@ class BaseAgent():
         
 class MyAgent(BaseAgent):
     def step(self, obs, reward):
-        return (self.col_offset + random.randint(0, self.cols_n-1) * self.block_len, self.row_offset + random.randint(0, self.rows_n-1) * self.block_len), pygame.USEREVENT
+        for i in range(8):
+            for j in range(8):
+                return (self.col_offset + i * self.block_len, self.row_offset + j * self.block_len), pygame.USEREVENT
