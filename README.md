@@ -1,7 +1,7 @@
 # Reversi Game Project
 ### Report
 ```
-- Algorithm :
+- Algorithm : 
 STEP 1 : Place it on the corners if it is able to
 STEP 2 : Place it on the edges without the positions next to the corners if it is able to
 STEP 3 : Place it on the other positions without the three positions next to the corner for each corner
