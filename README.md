@@ -1,9 +1,14 @@
 # Reversi Game Project
-### Prerequsite
+### Report
 ```
-$ pip install pygame
-$ pip install tqdm
-$ pip install numpy
+- Algorithm :
+STEP 1 : Place it on the corners if it is able to
+STEP 2 : Place it on the edges without the positions next to the corners if it is able to
+STEP 3 : Place it on the other positions without the three positions next to the corner for each corner
+STEP 4 : Place it on the position next to the corners
+(For above 4 steps, if there exists more than one choice, randomly choose one)
+
+
 ```
 ### Repo structure
 ```
@@ -16,7 +21,7 @@ $ pip install numpy
 ├── env.py
 ├── font
 │   ├── LICENSE.txt
-│   └── OpenSans-Regular.ttf
+│   └── OpenSans-Regular.ttfㄟ
 ├── pygamewrapper.py
 ├── reversi.py
 ├── reversi_board.py
